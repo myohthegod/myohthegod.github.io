@@ -62,12 +62,16 @@
     <a class="gtext" href="/games/Slope/slope">Slope</a>
   </div>
   <div class="gamediv" style="background-image: radial-gradient(circle, darkgreen, lightgreen);">
-    <a href="https://github.com/lax1dude/eaglercraft-beta#download-locally-singleplayer_offline_download_versionhtml"><img style="margin-bottom:20px;height:180px;width:300px;" src="/images/eaglercraftbeta.png"></a><br>
-    <a class="gtext" href="https://github.com/lax1dude/eaglercraft-beta#download-locally-singleplayer_offline_download_versionhtml">Minecraft 1.3 Beta (Download)</a>
+    <a href="https://mcbeta.edjiang1234.repl.co"><img style="margin-bottom:20px;height:180px;width:300px;" src="/images/eaglercraftbeta.png"></a><br>
+    <a class="gtext" href="https://mcbeta.edjiang1234.repl.co">Minecraft 1.3 Beta</a>
   </div>
 <div class="gamediv" style="background-image: radial-gradient(circle, lightblue, green);">
     <a href="https://mc.edjiang1234.repl.co" ><img style="margin-bottom:20px;height:180px;width:300px;" src="/images/eaglercraft.png"></a><br>
     <a class="gtext" href="mc.ediang1234.repl.co">Minecraft 1.5.2 (With singleplayer)</a>
+  </div>
+  <div class="gamediv" style="background-image: radial-gradient(circle, lightblue, green);">
+    <a href="https://eagserver.edjiang1234.repl.co" ><img style="margin-bottom:20px;height:180px;width:300px;" src="/images/eaglercraft.png"></a><br>
+    <a class="gtext" href="eagserver.ediang1234.repl.co">Minecraft 1.5.2 (With multiplayer server)</a>
   </div>
   <div class="gamediv" style="background-image: radial-gradient(circle, red, #333);">
     <a href="/games/ballgame/balls"><img style="margin-bottom:20px;height:180px;width:300px;" src="/images/ballsgame.png"></a><br>
