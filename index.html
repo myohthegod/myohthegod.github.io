@@ -3,6 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to the Home of MyohTheGod. A place where you can feel free and limitless in the world wide web. We have web proxies, bypasses, bookmarklets, games, and more. Anything to let your inner self free on the unblocked web." />
   <style>
     html {
       visibility: hidden;
@@ -19,13 +20,34 @@
 </head>
 
 <body>
-  <p style="margin:10px;text-align:center;">DISCLAIMER: This is designed for screens at least 1020px wide (and not optimized for small screens/windows)<br><br>Custom domain myohthegod.net is down... :(</p>
+  <p style="margin:10px;text-align:center;">DISCLAIMER: This is designed for screens at least 1020px wide (and not
+    optimized for small screens/windows, on phone do not use landscape)</p>
   <div class="mainstuff">
-      <p style="font-family: Cedarville Cursive, cursive"><i>Welcome to the Home of MyohTheGod.</i></p>
-      <p><i>Good Morning.</i></p>
-      <p><i>Welcome to a place where you will feel free and limitless.</i></p>
-      <p><a href="/ac"><i>About...</i></a></p>
+    <p style="font-family: Cedarville Cursive, cursive"><i>Welcome to the Home of MyohTheGod.</i></p>
+    <i>
+      <p id="goodmorning"></p>
+    </i>
+    <p><i>Welcome to a place where you will feel free and limitless.</i></p>
+    <p><a href="/ac"><i>About...</i></a></p>
   </div>
 </body>
+<script>
+  function goodmonring () {
+    var dez = new Date(); 
+    var hrs = dez.getHours();
+    var goodmorning = document.getElementById("goodmorning"); 
+    if (hrs < 12 || hrs == 0) {
+      goodmorning.innerHTML = "Good Morning.";
+    }
+    else if (hrs >= 12 && hrs < 18) {
+      goodmorning.innerHTML = "Good Afternoon.";
+    }
+    else if (hrs >= 18) {
+      goodmorning.innerHTML = "Good Night.";
+    }
+    setTimeout(goodmonring, 3600)
+  }
+  goodmonring();
+</script>
 
 </html>
