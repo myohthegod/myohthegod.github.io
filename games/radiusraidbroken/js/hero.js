@@ -15,7 +15,7 @@ $.Hero = function() {
 	this.takingDamage = 0;
 	this.fillStyle = '#fff';
 	this.weapon = {
-		fireRate: 5,
+		fireRate: 2,
 		fireRateTick: 5,
 		spread: 0.3,
 		count: 1,
