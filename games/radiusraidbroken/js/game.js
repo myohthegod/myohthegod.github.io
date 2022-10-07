@@ -901,8 +901,6 @@ $.updatePowerupTimers = function() {
 		$.hero.weapon.bullet.speed = 20;
 		$.powerupTimers[ 2 ] -= $.dt;
 	} else {
-		$.hero.weapon.fireRate = 5;
-		$.hero.weapon.bullet.speed = 10;
 	}
 
 	// TRIPLE SHOT
@@ -910,7 +908,6 @@ $.updatePowerupTimers = function() {
 		$.hero.weapon.count = 3;
 		$.powerupTimers[ 3 ] -= $.dt;
 	} else {
-		$.hero.weapon.count = 1;
 	}
 
 	// PIERCE SHOT
@@ -918,7 +915,7 @@ $.updatePowerupTimers = function() {
 		$.hero.weapon.bullet.piercing = 1;
 		$.powerupTimers[ 4 ] -= $.dt;
 	} else {
-		$.hero.weapon.bullet.piercing = 0;
+
 	}
 };	
 
