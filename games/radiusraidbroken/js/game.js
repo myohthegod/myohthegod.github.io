@@ -898,7 +898,7 @@ $.updatePowerupTimers = function() {
 	// FAST SHOT
 	if( $.powerupTimers[ 2 ] > 0 ){
 		$.hero.weapon.fireRate = 0.5;
-		$.hero.weapon.bullet.speed = 20;
+		$.hero.weapon.bullet.speed = 25;
 		$.powerupTimers[ 2 ] -= $.dt;
 	} else {
 	}

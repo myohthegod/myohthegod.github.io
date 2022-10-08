@@ -23,7 +23,7 @@ $.Hero = function() {
 		size: 15,
 		lineWidth: 2,
 		damage: 1,
-		speed: 10,
+		speed: 15,
 		piercing: 0,
 		strokeStyle: '#fff'
 	  },
