@@ -3,16 +3,17 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to the Home of MyohTheGod. A place where you can feel free and limitless in the world wide web. We have web proxies, bypasses, bookmarklets, games, and more. Anything to let your inner self free on the unblocked web." />
+  <meta name="description"
+    content="Welcome to the Home of MyohTheGod. A place where you can feel free and limitless in the world wide web. We have web proxies, bypasses, bookmarklets, games, and more. Anything to let your inner self free on the unblocked web." />
+  <script src="/js/theme.js" defer></script>
   <style>
     html {
       visibility: hidden;
       opacity: 0;
     }
   </style>
-  <title>Home of MyohTheGod</title>
-  <script src="/js/theme.js" defer></script>
   <script src="/js/header.js"></script>
+  <title>Home of MyohTheGod</title>
   <link rel="icon" type="image/x-icon" href="/supercorn.gif" defer>
   </link>
   <link id="css" href="/css/index.css" rel="stylesheet" type="text/css">
@@ -32,10 +33,10 @@
   </div>
 </body>
 <script>
-  function goodmonring () {
-    var dez = new Date(); 
+  function goodmonring() {
+    var dez = new Date();
     var hrs = dez.getHours();
-    var goodmorning = document.getElementById("goodmorning"); 
+    var goodmorning = document.getElementById("goodmorning");
     if (hrs < 12 || hrs == 0) {
       goodmorning.innerHTML = "Good Morning.";
     }
