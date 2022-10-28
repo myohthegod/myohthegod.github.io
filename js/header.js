@@ -3,6 +3,6 @@ document.write('<head><link rel="icon" type="image/x-icon" href="/supercorn.gif"
 window.addEventListener("load", function () {
   document.documentElement.style.visibility = "visible";
   document.documentElement.style.animationName = "fadein";
-  document.documentElement.style.animationDuration = "0.5s";
+  document.documentElement.style.animationDuration = "0.7s";
   document.documentElement.style.opacity = 1;
 })
