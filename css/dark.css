@@ -134,12 +134,6 @@ input:checked ~ .slider::before {
   font-size: 14px;
 }
 
-html {
-  animation-name: fadein;
-  animation-duration: 0.3s;
-  visibility: visible;
-  opacity: 1;
-}
 @keyframes fadein {from {opacity: 0; }to{ opacity: 1; }}
 @keyframes fadeout {from{opacity:1;}to{opacity:0;}}
 @keyframes fadeinout {0% {opacity:1}50% {opacity: 0;}100%{opacity:1;}}
