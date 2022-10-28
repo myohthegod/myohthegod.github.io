@@ -1,22 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
 
 body {
-  background-image: linear-gradient(135deg, #454545, #212121);
+  background-image: linear-gradient(110deg, lightblue, #64ff00);
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  color: lightblue;
-  width:100%;
-  padding: 0;
+  color: darkblue;
 }
-
 p {
   font-family: Nunito, sans-serif;
-  color: lightblue;
 }
 
 .mainstuff {
@@ -31,17 +26,15 @@ p {
   border-radius: 1mm;
   box-shadow: #000 0px 0px 5px;
   justify-content: center;
-  color: lightblue;
+  animation: shadowfade 2s infinite;
+  animation-timing-function: ease-in-out;
 }
 
-a {
-  color: #00aaff;
-}
 
 :root {
-  --light: lightyellow;
   --lightt: #d8dbe0;
-  --dark: #454545;
+  --light: lightyellow;
+  --dark: #28292c;
 }
 
 label {
@@ -67,8 +60,9 @@ input {
   transition: 0.3s;
 }
 
-
 .slider::before {
+  animation-name:fadein;
+  animation-duration: 0.3s;
   content: "";
   position: absolute;
   top: 2.2px;
@@ -76,18 +70,12 @@ input {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--light);
-  transition: 0.3s;
+  background: var(--light) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA8ZJREFUWEe1l1uoVVUUhj/NW15DSx9SvIORT4pEooR3guhBSzHyzQu+mIqatzTFC6FhIihYiUJEQfYkmApeIpB88AJK3lMMCVOOt7QSUz4YC+bZZ++1FvvofDn77L3mmP/8x/j/MVYL6l8dgBlAO2ArcLeeUC3q2RR7XgW+A14EJgOX64nVHAA9ge8DwPvApWcJQGBPCgI+NwC9gBHAUeBqDpCXgLXBwMfAXzmABTsSOFbJVGUK/H8qsCEALAXO1wjss12BlsDNHKB9gNXAOOBTYHv6bLUacMPnwNvAXmAB8Hs9+QW8uSy9B/wMzAXOpbGqAfC7gcB6YDSwGPgKeJxs9BnlpxRdD4CHFSzIzAfAZuBXYBFwppKpPBX0BcYH8rOxsQ3QD5gAvAm8AhjjVhwiYxeA/wLYAGAMcDhS2aSwi2T4AvB/HG7RfQjMAkzTI+B2/NYlGPkD+BrYEaCMLxMpe42yWQQge9jDTYXOdx/YDfwEXI8HekSR6QcW5jfAqijO3PIpA0DaZ0bAK8By4GDQnFFqnNYh3zXAa8BnwCbg3zwEZQAMAn4AOgKzgf05lEq3ev8yqNeijzcHgADnhJTU75KiGwUTsqR8ZUFGrKOqywOUkjnO2LgXnU16bTQ7gbFhUAdKWLQHDY860fmmJZ2yM9ApzjL+HQ+dB0wMyvzyFLAiqvjlaDhK8l3gdElDUn4/An8DFqbqUCkyo3w9V1b2+0FaJwUA458EMm9X53a83gFAIymzBKBSNCcBXAuWdUUBuLzsPgGIrFuSAgeLzNtNjykYBUyJ6i/qkgZ/IxiwAPWOOxFfiXpe1m0bilTg7xbTSmBL/M1crhYTynEhYCNThu7NLcIiSgeHDFuFER3JCagMh4UTyp6s2QdqriIG3KgRfQQsi2ZizTgraMXp8uZDookNBb6Iz/80F4D7rRF7uZK6AXwbhuRna0K12DnNty3YAjQFfxbRW8SAlGb585DpkQa9X79wCsoAWFwW7y5gW3J4GqMJnjwA3uStyKEDpwe1BV4H3gGkuXtUtAcr3z3hI8rPpXy15l8A+0hpALZbu5kHSWXlQOKt7A3e2qV0ZSSt9nQgORR+c7HMQOLN14U5WfE6ZaMxqiivye9eZGMy3jkVNXp/qJYCh1L1eyL03GSMSg7ITEWjqWVQ2XhnOrXiwqG0fwwX0uZEXCuwjeUToH3SO2ql2V7iVOxg+lv6UK0iLPti4quZAJx6i17NqsYskmFeup/bm1HZGhNA9nJqxytioGrc5jCgDOfHNOybVENZ5OlzTwGxttpB/K/dBAAAAABJRU5ErkJggg==");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-input:checked ~ .slider::before {
-  animation-name: fadein;
-  animation-duration: 0.3s;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABAVJREFUWEet11fspGMUBvDf6r1GrE4QNxIXunVDRLjRoiyChCB63dWJFiUkSrDRW7QLnWg3ShASkRDRy250opdllTxyvs1kzMz3/fc/bzLJZOZ9z3neU57zvFO0r2WxDXbDTvgYB+Oj9qPtO6aM2LI4NsPh2AGrIvvfwd54o918+45hAFbCgTgGa2Oh+vyFazADf7Sbb98xCMBqOK0ALIX38S22xjd1++faTXfb0Q8gYT4f+9eNH8VVBSZ5fxIH4etu5tt39QJYGqfjuMr17bgQc3EftsVlOGdc4Q+8BsDC2BNXYkXcjVPxRdXAE1incn8d/mm/W7cdDYD1cAe2wos4BO+ViQ3wDFKYR+LObqa77QqAVPiJOA8/lZMH8PcAAEcV0G7WO+wKgDUq5NMq14cVkOb4Wngc61darh53CsJwN2HRqvaH+hysXAC3r45Ii6Ywx7ISgUtwEl7FPpjdZ3kJXIRjkf7fD5+PxXt1wdPYDjfjePzaZzwgQ72zqi72xVPjBJChEvY7t6LRFF+vj3VxLzZF+OHoAUAXCFNu93PlPJ1wwxAr4YlTcDa+q05JrQwCOyEgAfBn3SaDJ7cbtsIV4YAt8XJNybcm2xEB8Evd5ATcOAJAorB7seUqeKyY8YPJgAiAD7F6Sw00uJasQp2JfA9DpnZer0h2DX/85kLz8iUVnR4f1gX9RlcoEGnLqKUIlGuRmkh7jqqL+FumFNbG8Z0fLsbJeAXTB/DAoFstjwMKSDokaYxCCohwRYCkuCNg4iPRCqFtgj1KW2Tozcqfu+AWLFJGH+mY08XqJpkPkWyJRm7/fenGTNJwShg2zqOskuqci9/fMTNf8uNdNe/vwRF9s2BUXnM+xiNaw6LhiYiaaIvkuFkBFvr+oaZq2PXtRLyZhmHAC8pxhlGiMNEeT5gzsDZC0jK1Qj+vpNyc0hrhk4AOs85o9EDERno8uu95HFpasGtV9+5rKjwRyKiPeEktxOnl2KtSlHp7rVcR5Y8rCuVtOAtfLgiCAWdS+Sn0fAImujNjfW6vJowCPgMhpIT/1tKEk5186ZiwbOwuV/WW6RuFPV8TNqCTtyijqOKsh3Ep3pwg0eRsUhD6Dl/kjZEayeSN83DHf2vYu+DMaskcCt9HsDyITys6o0Rp8p5871y1tEX5isSP3VT//PPDXkYxkHdAnmUp0N8KdYy8UGSVlmqUUXo7PJCW3hy7Funkt7whorLzvvikn2NGvQ1jNF0REDsiFJz1Iz4rtgvp5DZxlP5fs4o4dkNCL+F6RNaHLf+3RgFoUhTHeaSmS3K7OEkxJce951PdcZKiDS3fj2fx1ShOaQPQizgRCZ1uWJ+8F5Kq5DyRiLJ6t/gj3wfeuD8E/wIAO+GAFo1NsQAAAABJRU5ErkJggg==");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--dark);
-}
+
 
 #theme-wrapper {
   float: left;
@@ -104,7 +92,7 @@ input:checked ~ .slider::before {
   text-decoration: none;
   outline: none;
   color: darkblue;
-  background-image: linear-gradient(-110deg, #545454, #7a7a7a);
+  background-image: linear-gradient(-110deg, lightblue, #64ff00);
   border: 1px 1px 1px 1px black;
   border-radius: 12px;
   font-size: 20px;
@@ -123,7 +111,7 @@ input:checked ~ .slider::before {
   text-decoration: none;
   outline: none;
   color: darkblue;
-  background-image: linear-gradient(110deg, #545454, #7a7a7a);
+  background-image: linear-gradient(110deg, lightblue, #64ff00);
   border: 1px 1px 1px 1px black;
   border-radius: 12px;
   font-size: 20px;
@@ -137,3 +125,4 @@ input:checked ~ .slider::before {
 @keyframes fadein {from {opacity: 0; }to{ opacity: 1; }}
 @keyframes fadeout {from{opacity:1;}to{opacity:0;}}
 @keyframes fadeinout {0% {opacity:1}50% {opacity: 0;}100%{opacity:1;}}
+@keyframes shadowfade {0%{box-shadow: #000 0px 0px 7px;}50%{box-shadow: #000 0px 0px 15px;}100%{box-shadow: #000 0px 0px 7px;}}
