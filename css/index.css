@@ -126,3 +126,14 @@ input {
 @keyframes fadeout {from{opacity:1;}to{opacity:0;}}
 @keyframes fadeinout {0% {opacity:1}50% {opacity: 0;}100%{opacity:1;}}
 @keyframes shadowfade {0%{box-shadow: #000 0px 0px 7px;}50%{box-shadow: #000 0px 0px 15px;}100%{box-shadow: #000 0px 0px 7px;}}
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-90deg)
+    }
+    70% {
+        transform: rotateX(20deg) 
+    }
+    100% {
+        transform: rotateX(0deg) 
+    }
+}
