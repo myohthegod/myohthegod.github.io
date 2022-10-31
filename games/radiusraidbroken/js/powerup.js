@@ -50,7 +50,7 @@ $.Powerup.prototype.update = function( i ) {
 	==============================================================================*/
 	if( $.hero.life > 0 && $.util.arcIntersectingRect( $.hero.x, $.hero.y, $.hero.radius + 2, this.x, this.y, this.width, this.height ) ){
 		$.audio.play( 'powerup' );
-		$.powerupTimers[ this.type ] = 1000000000;
+		$.powerupTimers[ this.type ] = 100000;
 		$.particleEmitters.push( new $.ParticleEmitter( {
 			x: this.x + this.width / 2,
 			y: this.y + this.height / 2,

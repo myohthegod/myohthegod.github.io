@@ -48,8 +48,8 @@ $.Bullet.prototype.update = function( i ) {
 					count: Math.floor( $.util.rand( 1, 4 ) ),
 					spawnRange: 0,
 					friction: 0.85,
-					minSpeed: 5,
-					maxSpeed: 12,
+					minSpeed: 45,
+					maxSpeed: 50,
 					minDirection: ( this.direction - $.pi ) - $.pi / 5,
 					maxDirection: ( this.direction - $.pi ) + $.pi / 5,
 					hue: enemy.hue
