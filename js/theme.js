@@ -12,7 +12,6 @@ mode.addEventListener("click", function() {
 
 function whatmode () { 
 var ismode = localStorage.getItem("dark")
-console.log(ismode)
 if (ismode == "true") {
   mode.checked = true;
   css.href="/css/dark.css"

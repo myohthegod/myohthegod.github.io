@@ -31,58 +31,8 @@ p {
 }
 
 
-:root {
-  --lightt: #d8dbe0;
-  --light: lightyellow;
-  --dark: #28292c;
-}
-
-label {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  background-color: var(--lightt);
-  border-radius: 50px;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-input {
-  position: absolute;
-  display: none;
-}
-
-.slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-  transition: 0.3s;
-}
-
-.slider::before {
-  animation-name:fadein;
-  animation-duration: 0.3s;
-  content: "";
-  position: absolute;
-  top: 2.2px;
-  left: 2.2px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--light) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA8ZJREFUWEe1l1uoVVUUhj/NW15DSx9SvIORT4pEooR3guhBSzHyzQu+mIqatzTFC6FhIihYiUJEQfYkmApeIpB88AJK3lMMCVOOt7QSUz4YC+bZZ++1FvvofDn77L3mmP/8x/j/MVYL6l8dgBlAO2ArcLeeUC3q2RR7XgW+A14EJgOX64nVHAA9ge8DwPvApWcJQGBPCgI+NwC9gBHAUeBqDpCXgLXBwMfAXzmABTsSOFbJVGUK/H8qsCEALAXO1wjss12BlsDNHKB9gNXAOOBTYHv6bLUacMPnwNvAXmAB8Hs9+QW8uSy9B/wMzAXOpbGqAfC7gcB6YDSwGPgKeJxs9BnlpxRdD4CHFSzIzAfAZuBXYBFwppKpPBX0BcYH8rOxsQ3QD5gAvAm8AhjjVhwiYxeA/wLYAGAMcDhS2aSwi2T4AvB/HG7RfQjMAkzTI+B2/NYlGPkD+BrYEaCMLxMpe42yWQQge9jDTYXOdx/YDfwEXI8HekSR6QcW5jfAqijO3PIpA0DaZ0bAK8By4GDQnFFqnNYh3zXAa8BnwCbg3zwEZQAMAn4AOgKzgf05lEq3ev8yqNeijzcHgADnhJTU75KiGwUTsqR8ZUFGrKOqywOUkjnO2LgXnU16bTQ7gbFhUAdKWLQHDY860fmmJZ2yM9ApzjL+HQ+dB0wMyvzyFLAiqvjlaDhK8l3gdElDUn4/An8DFqbqUCkyo3w9V1b2+0FaJwUA458EMm9X53a83gFAIymzBKBSNCcBXAuWdUUBuLzsPgGIrFuSAgeLzNtNjykYBUyJ6i/qkgZ/IxiwAPWOOxFfiXpe1m0bilTg7xbTSmBL/M1crhYTynEhYCNThu7NLcIiSgeHDFuFER3JCagMh4UTyp6s2QdqriIG3KgRfQQsi2ZizTgraMXp8uZDookNBb6Iz/80F4D7rRF7uZK6AXwbhuRna0K12DnNty3YAjQFfxbRW8SAlGb585DpkQa9X79wCsoAWFwW7y5gW3J4GqMJnjwA3uStyKEDpwe1BV4H3gGkuXtUtAcr3z3hI8rPpXy15l8A+0hpALZbu5kHSWXlQOKt7A3e2qV0ZSSt9nQgORR+c7HMQOLN14U5WfE6ZaMxqiivye9eZGMy3jkVNXp/qJYCh1L1eyL03GSMSg7ITEWjqWVQ2XhnOrXiwqG0fwwX0uZEXCuwjeUToH3SO2ql2V7iVOxg+lv6UK0iLPti4quZAJx6i17NqsYskmFeup/bm1HZGhNA9nJqxytioGrc5jCgDOfHNOybVENZ5OlzTwGxttpB/K/dBAAAAABJRU5ErkJggg==");
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 
-
-#theme-wrapper {
-  float: left;
-  display: block;
-  min-width: 60px;
-  margin: auto;
-}
 
 #aboutbutton {
   display: inline-block;
